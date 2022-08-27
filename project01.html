@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="root">
-        <h1>hello,{{name}}</h1>
+        <h1>hello,{{name}},{{address}}</h1>
     </div>
     <script>
         Vue.config.devtools=true;
@@ -17,7 +17,8 @@
         new Vue({
             el:'#root',
             data:{
-                name:'world'
+                name:'world',
+                address: 'Weihai'
             }
         })
     </script>
